@@ -11,26 +11,26 @@ class MenuItemView: UICollectionViewCell {
     //MARK: - Properties
     static let identifier = "MenuItemView"
     
-    private let itemImageView = UIImageView()
+    private let menuItemImage = UIImageView()
     private let nameLabel = UILabel()
     private let descriptionLabel = UILabel()
     private var priceLabel = UILabel()
     
     //MARK: - Set up views
-    private func setupItemImageView() {
-        itemImageView.contentMode = .scaleAspectFill
-        itemImageView.clipsToBounds = true
-        itemImageView.layer.cornerRadius = 12
+    private func setUpMenuItemImage() {
+        menuItemImage.contentMode = .scaleAspectFill
+        menuItemImage.clipsToBounds = true
+        menuItemImage.layer.cornerRadius = 12
         
-        contentView.addSubview(itemImageView)
-        itemImageView.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(menuItemImage)
+        menuItemImage.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            // Recipe Image
-            itemImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
-            itemImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-            itemImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
-            itemImageView.heightAnchor.constraint(equalToConstant: 120)
+            // Menu Image
+            menuItemImage.topAnchor.constraint(equalTo: contentView.topAnchor),
+            menuItemImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            menuItemImage.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
+            menuItemImage.heightAnchor.constraint(equalToConstant: 120)
         ])
         
     }
@@ -44,7 +44,7 @@ class MenuItemView: UICollectionViewCell {
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            nameLabel.topAnchor.constraint(equalTo: itemImageView.bottomAnchor,
+            nameLabel.topAnchor.constraint(equalTo: menuItemImage.bottomAnchor,
                                            constant: 8),
             nameLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
             nameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
@@ -85,7 +85,7 @@ class MenuItemView: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        setupItemImageView()
+        setUpMenuItemImage()
         setUpNameLabel()
         setUpDescriptionLabel()
         setUpPriceLabel()
@@ -94,6 +94,10 @@ class MenuItemView: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    //MARK: - Config
+    
+    
     
 }
 
