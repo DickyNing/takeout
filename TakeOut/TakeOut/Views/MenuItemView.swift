@@ -6,6 +6,8 @@
 //
 import UIKit
 import SDWebImage
+import SwiftUI
+import SwiftUICore
 
 class MenuItemView: UICollectionViewCell {
     //MARK: - Properties
@@ -56,14 +58,14 @@ class MenuItemView: UICollectionViewCell {
         descriptionLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
         descriptionLabel.textColor = .darkGray
         descriptionLabel.numberOfLines = 3
-            
+        
         contentView.addSubview(descriptionLabel)
         descriptionLabel.translatesAutoresizingMaskIntoConstraints = false
-            
+        
         NSLayoutConstraint.activate([
-        descriptionLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 4),
-        descriptionLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
-        descriptionLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
+            descriptionLabel.topAnchor.constraint(equalTo: nameLabel.bottomAnchor, constant: 4),
+            descriptionLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            descriptionLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor)
         ])
     }
     
@@ -80,8 +82,8 @@ class MenuItemView: UICollectionViewCell {
         ])
     }
     
-   
- //MARK: - init
+    
+    //MARK: - init
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -98,7 +100,6 @@ class MenuItemView: UICollectionViewCell {
     //MARK: - Config
     
     
-    
+    //MARK: - content view
 }
-
 
