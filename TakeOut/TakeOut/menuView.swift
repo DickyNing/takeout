@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct menuView: View {
     var body: some View {
         NavigationView{
             Text("show the menu of your dining halls")
@@ -12,6 +12,6 @@ struct ContentView: View {
 }
 struct contentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        menuView()
     }
 }

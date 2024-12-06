@@ -15,7 +15,7 @@ struct TabBar: View {
                 .tabItem {
                     Label("Favorites", systemImage: "heart")
                 }
-            ContentView()
+            menuView()
                 .tabItem {
                     Label("Food", systemImage: "fork.knife")
                 }
