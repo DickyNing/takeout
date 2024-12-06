@@ -8,11 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		F8875B472D0276F70020092C /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F8875B462D0276F70020092C /* Alamofire */; };
-		F8875B492D0276F70020092C /* AlamofireDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F8875B482D0276F70020092C /* AlamofireDynamic */; };
 		F8875B4C2D0277010020092C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F8875B4B2D0277010020092C /* SnapKit */; };
-		F8875B4E2D0277010020092C /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = F8875B4D2D0277010020092C /* SnapKit-Dynamic */; };
 		F8875B512D02770A0020092C /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = F8875B502D02770A0020092C /* SDWebImage */; };
-		F8875B532D02770A0020092C /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F8875B522D02770A0020092C /* SDWebImageMapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,9 +44,6 @@
 			files = (
 				F8875B4C2D0277010020092C /* SnapKit in Frameworks */,
 				F8875B472D0276F70020092C /* Alamofire in Frameworks */,
-				F8875B492D0276F70020092C /* AlamofireDynamic in Frameworks */,
-				F8875B4E2D0277010020092C /* SnapKit-Dynamic in Frameworks */,
-				F8875B532D02770A0020092C /* SDWebImageMapKit in Frameworks */,
 				F8875B512D02770A0020092C /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -94,11 +88,8 @@
 			name = TakeOut;
 			packageProductDependencies = (
 				F8875B462D0276F70020092C /* Alamofire */,
-				F8875B482D0276F70020092C /* AlamofireDynamic */,
 				F8875B4B2D0277010020092C /* SnapKit */,
-				F8875B4D2D0277010020092C /* SnapKit-Dynamic */,
 				F8875B502D02770A0020092C /* SDWebImage */,
-				F8875B522D02770A0020092C /* SDWebImageMapKit */,
 			);
 			productName = TakeOut;
 			productReference = 07A363A42D02752E00D1D6CC /* TakeOut.app */;
@@ -391,30 +382,15 @@
 			package = F8875B452D0276F70020092C /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		F8875B482D0276F70020092C /* AlamofireDynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F8875B452D0276F70020092C /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = AlamofireDynamic;
-		};
 		F8875B4B2D0277010020092C /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F8875B4A2D0277010020092C /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
 		};
-		F8875B4D2D0277010020092C /* SnapKit-Dynamic */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F8875B4A2D0277010020092C /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = "SnapKit-Dynamic";
-		};
 		F8875B502D02770A0020092C /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F8875B4F2D02770A0020092C /* XCRemoteSwiftPackageReference "SDWebImage" */;
 			productName = SDWebImage;
-		};
-		F8875B522D02770A0020092C /* SDWebImageMapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F8875B4F2D02770A0020092C /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImageMapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
