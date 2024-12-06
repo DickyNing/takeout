@@ -6,8 +6,6 @@
 //
 
 
-import Foundation
-
 struct Order: Codable {
     let userID: Int
     let hallID: Int
