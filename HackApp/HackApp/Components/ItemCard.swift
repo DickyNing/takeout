@@ -32,7 +32,7 @@ struct ItemCard: View {
                 .frame(width: 180, alignment: .leading)
                 .background(.white)
             }
-            .frame(width: 100, height: 250)
+            .frame(width: 190, height: 250)
             .shadow(radius: 3)
             
             Button {
